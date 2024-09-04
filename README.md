@@ -1,3 +1,5 @@
-#تماشا
+# Tamasha
 
-قبل از اجرای برنامه نیاز دارین دوتا کار انجام بدین اول اینکه وارد ssms بشین و روی databases کلیک راست کنین و روی import data-tier application کلیک کنین و فایل Tamasha.bacpac رو وارد کنین، اینکار جداول و stored procedure هارو روی دیتابیسی جدید بارگزاری میکنه(اگر به ارور خوردین باید ssms رو آپدیت کنین) بعد از اون، برید داخل پوشه اصلی پروژه وارد Database/SQL.cs بشین و connection string دیتابیس جدید که import کردین رو اونجا الصاق کنین.
+# Startup
+Open SSMS (SQL Server Management Studio), right-click on Databases, select Import Data-tier Application, and import the Tamasha.bacpac file (You can do this with any DBMS). This will load the tables and stored procedures into a new database. (If you encounter an error, you may need to update SSMS.)
+Go to the main project folder, open Database/SQL.cs, and update the connection string with the new database you imported.
